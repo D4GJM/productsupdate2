@@ -9,6 +9,9 @@ import "../assets/vendor/swiper/swiper-bundle.min.css";
 import "../css/Header.css";
 import headerLog from "../image/mainlogo.png";
 import { Link } from "react-router-dom";
+
+
+
 export default function Header() {
   return (
     <>
@@ -87,10 +90,10 @@ export default function Header() {
                   About
                 </Link>
               </li>
-              <li>
+              <li>{/*}
                 <Link to="#" className="nav-link scrollto" href="#">
                   Blog
-                </Link>
+</Link>*/}
               </li>
 
               <li className="dropdown">

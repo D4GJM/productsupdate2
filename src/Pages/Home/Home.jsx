@@ -13,11 +13,10 @@ import image5 from "./img/intro-carousel/5.jpg";
 import aboutmisson from "./img/about-mission.jpg";
 import aboutplan from "./img/about-plan.jpg";
 import aboutvision from "./img/about-vision.jpg";
-
+import ourHistory from "../image/ourHisory.jpg";
 import "./Icons/css/ionicons.min.css";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -37,23 +36,110 @@ export default function Home() {
                 style={{ backgroundImage: { image1 } }}
               >
                 <div className="carousel-container">
-                  <h1>IYKONS</h1>
-                  <p></p>
+                  <div className="carousel-content">
+                    <h1>IYKONS</h1>
+                    <p></p>
+                  </div>
                 </div>
               </div>
               <div
                 className="carousel-item"
                 style={{ backgroundImage: { image2 } }}
-              ></div>
+              >
+                <div className="carousel-container">
+                  <div className="carousel-content">
+                    <h1>IYKONS</h1>
+                    <p>
+                      <h2>Welcome to IYKONS</h2>
+                      IYKONS offers complete financial, IT, and business support
+                      solutions for companies and individuals across three
+                      continents. Our excellent team of specialists can help you
+                      and your business with your financial, IT, and business
+                      support needs. Our mission is to meet the needs of SMEs
+                      under one roof. We relish the challenges of finding the
+                      best solutions for you, and we thrive on making our
+                      clients happy. To find out more about our services, please
+                      do not hesitate to contact us online or at your nearest
+                      local office.
+                    </p>
+                  </div>
+                </div>
+              </div>
               <div
                 className="carousel-item"
                 style={{ backgroundImage: { image3 } }}
-              ></div>
-
+              >
+                <div className="carousel-container">
+                  <div className="carousel-content">
+                    <h1>IYKONS</h1>
+                    <p>
+                      <h2>Welcome to IYKONS</h2>
+                      IYKONS offers complete financial, IT, and business support
+                      solutions for companies and individuals across three
+                      continents. Our excellent team of specialists can help you
+                      and your business with your financial, IT, and business
+                      support needs. Our mission is to meet the needs of SMEs
+                      under one roof. We relish the challenges of finding the
+                      best solutions for you, and we thrive on making our
+                      clients happy. To find out more about our services, please
+                      do not hesitate to contact us online or at your nearest
+                      local office.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="carousel-item"
+                style={{ backgroundImage: { image4 } }}
+              >
+                <div className="carousel-container">
+                  <div className="carousel-content">
+                    <h1>IYKONS</h1>
+                    <p>
+                      <h2>Welcome to IYKONS</h2>
+                      IYKONS offers complete financial, IT, and business support
+                      solutions for companies and individuals across three
+                      continents. Our excellent team of specialists can help you
+                      and your business with your financial, IT, and business
+                      support needs. Our mission is to meet the needs of SMEs
+                      under one roof. We relish the challenges of finding the
+                      best solutions for you, and we thrive on making our
+                      clients happy. To find out more about our services, please
+                      do not hesitate to contact us online or at your nearest
+                      local office.
+                    </p>
+                  </div>
+                </div>
+              </div>
               <div
                 className="carousel-item"
                 style={{ backgroundImage: { image5 } }}
-              ></div>
+              >
+                <div className="carousel-container">
+                  <div className="carousel-content">
+                    <h1>IYKONS</h1>
+                    <p>
+                      <h2>Welcome to IYKONS</h2>
+                      IYKONS offers complete financial, IT, and business support
+                      solutions for companies and individuals across three
+                      continents. Our excellent team of specialists can help you
+                      and your business with your financial, IT, and business
+                      support needs. Our mission is to meet the needs of SMEs
+                      under one roof. We relish the challenges of finding the
+                      best solutions for you, and we thrive on making our
+                      clients happy. To find out more about our services, please
+                      do not hesitate to contact us online or at your nearest
+                      local office.
+                    </p>
+                    <a
+                      href="#featured-services"
+                      className="btn-get-started scrollto"
+                    >
+                      Get Started
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
             <a
               className="carousel-control-prev"
@@ -62,7 +148,7 @@ export default function Home() {
               data-slide="prev"
             >
               <span
-                className="carousel-control-prev-icon "
+                className="carousel-control-prev-icon ion-chevron-left"
                 aria-hidden="true"
               />
               <span className="sr-only">Previous</span>
@@ -74,7 +160,7 @@ export default function Home() {
               data-slide="next"
             >
               <span
-                className="carousel-control-next-icon "
+                className="carousel-control-next-icon ion-chevron-right"
                 aria-hidden="true"
               />
               <span className="sr-only">Next</span>
@@ -138,7 +224,7 @@ Facts Section
           </header>
         </div>
       </section>
-      {/* #facts */}
+      {/* #intro */}
       {/*==========================
 About Us Section
     ============================*/}
@@ -148,7 +234,7 @@ About Us Section
           <header className="section-header wow fadeInUp">
             <h1>Services</h1>
             <br />
-
+     
             <p></p>
           </header>
           <div className="row">
@@ -160,9 +246,11 @@ About Us Section
                 <i className="ion-ios-analytics-outline" />
               </div>
               <h4 className="title">
-                <Link to="/AccountandFinance">Accounting & Finance</Link>
+                <a href="http://localhost:3000/AccountandFinance">Accounting & Finance</a>
               </h4>
-              <p className="description"></p>
+              <p className="description">
+                
+              </p>
             </div>
             <div
               className="col-lg-4 col-md-6 box wow bounceInUp"
@@ -172,11 +260,11 @@ About Us Section
                 <i className="ion-ios-bookmarks-outline" />
               </div>
               <h4 className="title">
-                <Link to="/TechnologyandInnovation">
-                  Technology & Innovation
-                </Link>
+                <a href="http://localhost:3000/TechnologyandInnovation">Technology & Innovation</a>
               </h4>
-              <p className="description"></p>
+              <p className="description">
+       
+              </p>
             </div>
             <div
               className="col-lg-4 col-md-6 box wow bounceInUp"
@@ -186,9 +274,11 @@ About Us Section
                 <i className="ion-ios-paper-outline" />
               </div>
               <h4 className="title">
-                <Link to="/DigitalMarketing">Digital Marketing & Branding</Link>
+                <a href="http://localhost:3000/DigitalMarketing">Digital Marketing & Branding</a>
               </h4>
-              <p className="description"></p>
+              <p className="description">
+            
+              </p>
             </div>
             <div
               className="col-lg-4 col-md-6 box wow bounceInUp"
@@ -199,11 +289,11 @@ About Us Section
                 <i className="ion-ios-speedometer-outline" />
               </div>
               <h4 className="title">
-                <Link to="/BusinessPersonalFinance">
-                  Business & Personal Finance
-                </Link>
+                <a href="http://localhost:3000/BusinessPersonalFinance">Business & Personal Finance</a>
               </h4>
-              <p className="description"></p>
+              <p className="description">
+          
+              </p>
             </div>
             <div
               className="col-lg-4 col-md-6 box wow bounceInUp"
@@ -211,107 +301,79 @@ About Us Section
               data-wow-duration="1.4s"
             >
               <div className="icon">
-                <i className="ion-ios-barcode-outline" />
+            
+              <i className="ion-ios-people-outline" />
               </div>
               <h4 className="title">
-                <Link to="/BusinessSupport">
-                  Business Support & Consultancy
-                </Link>
+                <a href="http://localhost:3000/BusinessSupport">Business Support & Consultancy</a>
               </h4>
-              <p className="description"></p>
+              <p className="description">
+         
+              </p>
             </div>
-            <div
-              className="col-lg-4 col-md-6 box wow bounceInUp"
-              data-wow-delay="0.1s"
-              data-wow-duration="1.4s"
-            >
-              <div className="icon">
-                <i className="ion-ios-people-outline" />
-              </div>
-              <h4 className="title">
-                <a href="">IT Infrastructure Management</a>
-              </h4>
-              <p className="description"></p>
-            </div>
+         
           </div>
         </div>
       </section>
 
-      <section id="about">
-        <div className="container">
-          <header className="section-header">
-            <h1>IYKONS PRODUCTS</h1>
-            <p>
-              <br></br>
 
-              <br></br>
-            </p>
-          </header>
-          <div className="row about-cols">
-            <div className="col-md-4 wow fadeInUp">
-              <div className="about-col">
-                <div className="img">
-                  <img src={aboutmisson} alt="" className="img-fluid" />
-                  <div className="icon">
-                    <i className="ion-ios-speedometer-outline" />
-                  </div>
-                </div>
-                <h2 className="title">
-                  <Link to="/Fantach">IYKONS & Fintech </Link>
-                </h2>
-                <p>
-                  We create new or improve existing financial solutions for our
-                  customers based on our nearly 20 years of experience in
-                  banking and financial software development. We are prepared to
-                  do market research and provide an effective fintech solution
-                  for your company for the right financial management.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
-              <div className="about-col">
-                <div className="img">
-                  <img src={aboutplan} alt="" className="img-fluid" />
-                  <div className="icon">
-                    <i className="ion-ios-list-outline" />
-                  </div>
-                </div>
-                <h2 className="title">
-                  <Link to="/Iykonnect">IYCONNECT</Link>
-                </h2>
-                <p>
-                  IYCONNECT is a collaborative practice management platform to
-                  manage the workflow, communicate with the team, and deliver
-                  exceptional client work. IYCONNECT brings a total
-                  transformation across the entire practice, allowing any firm
-                  to maximize efficiencies, streamline processes and optimize
-                  the scale.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
-              <div className="about-col">
-                <div className="img">
-                  <img src={aboutvision} alt="" className="img-fluid" />
-                  <div className="icon">
-                    <i className="ion-ios-eye-outline" />
-                  </div>
-                </div>
-                <h2 className="title">
-                  <a href="#">IYPay</a>
-                </h2>
-                <p>
-                  HR Software for SMEs that is easy and economical Are you a
-                  small or medium-sized firm seeking an easy-to-use, low-cost HR
-                  Management System? We help you streamline your HR operations
-                  by eliminating the need for time-consuming manual processes
-                  with our simple-to-implement system.
-                </p>
-              </div>
+{/*    ============================*/}
+
+
+<section id="about">
+  <div className="container">
+    <header className="section-header">
+      <h1>IYKONS PRODUCTS</h1>
+      <p><br /><br /></p>
+    </header>
+    <div className="row about-cols">
+      <div className="col-md-6 wow fadeInUp">
+        <div className="about-col">
+          <div className="img">
+            <img src={aboutmisson} alt="" className="img-fluid" />
+            <div className="icon">
+              <i className="ion-ios-speedometer-outline" />
             </div>
           </div>
+          <h2 className="title">
+            <a href="http://localhost:3000/Fantach">IYKONS & Fintech </a>
+          </h2>
+          <p>
+            We create new or improve existing financial solutions for our
+            customers based on our nearly 20 years of experience in
+            banking and financial software development. We are prepared to
+            do market research and provide an effective fintech solution
+            for your company for the right financial management.
+          </p>
         </div>
-      </section>
+      </div>
+      <div className="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+        <div className="about-col">
+          <div className="img">
+            <img src={aboutplan} alt="" className="img-fluid" />
+            <div className="icon">
+              <i className="ion-ios-list-outline" />
+            </div>
+          </div>
+          <h2 className="title">
+            <a href="http://localhost:3000/Iykonnect">IYCONNECT</a>
+          </h2>
+          <p>
+            IYCONNECT is a collaborative practice management platform to
+            manage the workflow, communicate with the team, and deliver
+            exceptional client work. IYCONNECT brings a total
+            transformation across the entire practice, allowing any firm
+            to maximize efficiencies, streamline processes and optimize
+            the scale.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
       <Footer />
     </>
   );

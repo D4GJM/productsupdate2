@@ -35,6 +35,7 @@ function App() {
         <Route path="/BusinessSupport" element={<BusinessSupport />} />
         <Route path="/BusinessPersonalFinance" element={<BusinessPersonalFinance />} />
         <Route path="/Privacy" element={<Privacy />} />
+
       </Routes>
     </BrowserRouter>
   
